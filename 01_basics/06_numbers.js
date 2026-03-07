@@ -40,9 +40,5 @@ console.log(Math.floor(Math.random() * (Max - Min + 1)) + Min);
 
 
 // math. random give values from 0 to 1 but not including 1. so we need to multiply it with the range of numbers we want and then add the minimum value to it. This way we can get a random number between the minimum and maximum values.
-
-    
-
-
-
+//math related functions are very useful in many applications, such as generating random numbers for games, calculating distances, and performing various mathematical operations.
 
