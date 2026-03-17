@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Test Card</title>
+</head>
+<body>
+
+<button id="btn">Click Me</button>
+<div id="cardContainer"></div>
+
+<script>
+const requestUrl = "https://api.github.com/users/hiteshchoudhary";
+
+document.getElementById("btn").addEventListener("click", function () {
+
+    const xhr = new XMLHttpRequest();
+    xhr.open("GET", requestUrl);
+
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4) {
+            const data = JSON.parse(xhr.responseText);
+
+            const card = document.createElement("div");
+
+            const img = document.createElement("img");
+            img.src = data.avatar_url;
+            img.style.width = "100px";
+
+            const p = document.createElement("p");
+            p.innerText = "Followers: " + data.followers;
+
+            card.appendChild(img);
+            card.appendChild(p);
+
+            document.getElementById("cardContainer").innerHTML = "";
+            document.getElementById("cardContainer").appendChild(card);
+        }
+    };
+
+    xhr.send();
+});
+</script>
+
+</body>
+</html>
