@@ -32,6 +32,11 @@ process of fetching a resource from the network , returning the promise once the
 - variables - onfilled - resolve 
             - onrejection- rejection
 
-- web brower network request response onfulfilled 404 error  
+- web brower network request response onfulfilled 404 error
+
+## prototype
+array - object - null 
+string - object
+function - object
 
 
