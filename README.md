@@ -39,4 +39,9 @@ array - object - null
 string - object
 function - object
 
+## call and this (bind)
+
+- Global execution context - call me execution context (this) - window object access 
+
+
 
