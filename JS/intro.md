@@ -7,5 +7,6 @@
 ## Java script
 
 - js is synchronous single threaded language 
+- 
 
 
