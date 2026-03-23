@@ -62,4 +62,24 @@
 
 - a function bind together with its lexical environment 
 - used in : Module design pattern, curring, function like once, memoize, maintaining state in async world, setTimeouts, Iterators, ...
-- 
+
+
+
+## Applications 
+
+- in set timeout - waits until the other function or log is completed and works with settime out 
+- print 1 to 5 use let in for loop - let allocates new copy 
+- let is block scope 
+- using var to print create closure using function call the i function for the number of time
+- closure is a combination of function and lexical scope forms a closure (function along with its outer environment), access to its outer lexical environment.  
+- outer()() => var close = outer();
+                close()
+- advantages - it is used in module pattern , function curing ,memoize ,data hiding and encapsulation (other functions does not use it(variable) )
+- constructor function (this.) and also use new keyword
+- disadvantages - conusumes lot of memory no garbage collection (freeze unutilized memory)
+- smart garbage collection system- variable not in use will be removed 
+
+## first class functions anonymous function
+
+
+
