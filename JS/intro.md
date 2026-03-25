@@ -79,7 +79,38 @@
 - disadvantages - conusumes lot of memory no garbage collection (freeze unutilized memory)
 - smart garbage collection system- variable not in use will be removed 
 
-## first class functions anonymous function
+## first class functions anonymous function (function statement, function Expression, function declaration )
+- function statement - function keyword and name of the function - it is also function declaration 
+- function expression - giving value to the function 
+- diffrence between function statement and expression hoisting 
+- anonymous function - without a name - no identity - used where functions are used as values 
+- named function expression - giving variable to function also giving a name to the function also - but cannot call with name of the function outside the function 
+- difference between parameter and argument - variable inside parameter of the function name(parameter) - value while calling the function called arguments 
+- first class functions - the ability to use function as a value and can be passed as a argument to another function and also can be returned as a function.
+- functions are first class citizens 
+- arrow functions 
+
+## callback
+- callback function - function passed into another function - using callback we can async
+- garbage collection and remove event listeners - extra memory cannot be freed up and event listeners feel heavy so we remove 
+
+## Asynchronous and event loop 
+- web apis - settimeout(), DOM apis, fetch(), local storage, console, location 
+- event loop checks the call back queue and puts it into the stack
+- addeventlistener - (document calls the DOM api ) registers event 
+- event loop - monitor call stack and call back queue 
+- fetch() - to make network calls - after fetched call back function will be executed 
+- micro task queue - high priority for call back function
+- event loop keeps checking whether the call stack is empty 
+- micro task queue call back function which comes through promises will go inside call back queue - mutation observer - allows to monitor changes in DOM
+- event loop makes all the microtask queue to be executed and thn executes the call back queue
+- stravation - starvation refers to a situation where a task is perpetually delayed and never gets a chance to execute because the event loop is always busy handling other tasks — usually higher-priority or more frequently scheduled ones.- This is a concurrency scheduling problem that can happen even though JavaScript is single-threaded, because it relies on the event loop and task queues.
+
+
+## JS engine 
+- 
+
+
 
 
 
