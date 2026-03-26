@@ -108,8 +108,28 @@
 
 
 ## JS engine 
-- 
+- javascript engine used in google is V8(c++) (ignition - interpreter)(turbofan - optimizing compliler)(garbage collector - orinoco, mark and sweep algo, oilpan)
+- V8 engine - js code - parser - abstract syntax tree - interpreter ignition - compliler turbofan - optimizzed machine code  - bytecode 
+- JS engine takes human readable code as input - parsing, complilation, execution - parsing - code is broken down into tockens syntax parser take a code convert into abstract syntax tree (generates a structure to easily understand)(axt) - 
+complilation - just in time complilation (both interpreter and compliler works together )interpreter compliler - interpreter - take a code executes code line by line (faster)- compliler - whole code is complied before executing it is converted to optimized version of the code (efficience)
+- java script can behave like both compliler as well as interpreter 
+- aot ahead of time complilation 
+- execution - memory heap and call stack - memory heap all variables and functions assign memory garage collector free ups space (mark an sweep - The Mark and Sweep Algorithm is a garbage collection technique used in memory management to automatically free unused memory.Mark Phase → Identify all objects that are still in use
+Sweep Phase → Remove objects that are not in use) - inline, copy elision inline caching for optimization 
 
+## settimeout()
+- trustissues - doesnot gurantee it will execute in the exact time 
+- settimeout 0 is it will still wait for the other code to execute then settimeout part 
+
+## higher order function 
+- higher order function - a function which takes another function as an argument or returns a function from it 
+- functional programing - eaach function has its own responsibility 
+- map - maos the whole array with a logic 
+- Array.prototype.calculate - appears in all arrays
+- prototypal inheritance - sccess hidden properties (__proto__)
+- map - tranform an array - each value n get individuval value - pass function for teh logic 
+- filter - filter values inside an array 
+- reduce - take elements of an array and come up with a single value 
 
 
 
